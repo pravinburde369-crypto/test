@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background: linear-gradient(30deg,rgb(23 22 27),rgb(65 65 65 ),rgb(59 59 59));
+    min-height: 100vh;
+}
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: transparent;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+nav a{
+    color: #fff;
+    font-size: 15px;
+    margin-left: 60px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55% ease;
+}
+nav a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+#menu-btn{
+    display: none;
+    color: #fff;
+    font-size: 30px;
+    z-index: 101;
+    cursor: pointer;
+}
+/*---hero section start---*/
+
+section{
+    padding: 9% 15%;
+}
+
+section.hero {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 10rem;
+}
+
+.hero h4{
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.hero h3{
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.hero h1{
+    font-family: cursive;
+    font-size: 100px;
+    line-height: 1;
+    color: #fff;
+    margin: 0 55px 45px 0px;
+    font-size: 700;
+    font-style: italic;
+}
+.hero p{
+    color: #fff;
+    font-size: 13px;
+    line-height: 1.9;
+    margin-bottom: 40px;
+}
+.hero-text-content a{
+    display: inline-block;
+    color: #fff;
+    background: #9b9b9a;
+    border: 1px solid transparent;
+    padding: 12px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: .55%;
+}
+.hero-text-content a:hover{
+    background: transparent;
+    border: 1px solid #fff;
+    transform: translate(8px);
+}
+.hero-text-content a.watch-game{
+    padding: 7px;
+    background: transparent;
+    border: 1px solid #fff;
+    margin-left: 20px;
+}
+
+.hero-text-content a.watch-game i{
+    vertical-align: middle;
+    margin-right: 5px;
+    font-size: 19px;
+}
+.hero-img{
+    width: 700px;
+    height: auto;
+    filter: drop-shadow(0 0 5px #000);
+}
+/* icons */
+
+.icon{
+    margin-right: 20px;
+    position: absolute;
+    top: 50%;
+    padding: 0 9%;
+    transform: translateY(-50%);
+}
+
+.icon i{
+    display: block;
+    margin: 26px 0;
+    font-size: 24px;
+    color: #fff;
+    transition: .3%;
+}
+
+.icon i:hover{
+    color: #9b9b9a;
+     transform: translateY(-6px);
+}
+
+/*  scroll  */
+.scroll up{
+    position: absolute;
+    bottom: 6%;
+    right: 4%;
+}
+.scroll up i{
+    display: block;
+    padding: 12px;
+    font-size: 20px;
+    color: #fff;
+    background: #9b9b9a;
+    border-radius: 30px;
+    transition: .3%;
+}
+.scroll up i:hover{
+    transform: translateY(-5px);
+}
